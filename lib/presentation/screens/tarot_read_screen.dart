@@ -12,7 +12,6 @@ class TarotReadScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Tarot screen'),
       ),
-      body: const Placeholder(),
       floatingActionButton: FloatingActionButton(onPressed: ()=>context.go('/')),
     );
   }
