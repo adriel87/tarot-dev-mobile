@@ -20,8 +20,22 @@ class AppTheme {
 
   ThemeData getTheme ()=> ThemeData(
     useMaterial3: true,
-    colorSchemeSeed: colorList[selectedColor],
-    // TODO: study themeData to configure theme
+    // colorSchemeSeed: colorList[selectedColor],
+    // backgroundColor: Colors.transparent,
+    colorScheme: ColorScheme(
+      brightness: Brightness.dark, 
+      primary: colorList[selectedColor], 
+      onPrimary:colorList[selectedColor] , 
+      secondary:colorList[selectedColor] , 
+      onSecondary:colorList[selectedColor] , 
+      error:colorList[selectedColor] , 
+      onError:colorList[selectedColor] , 
+      background:Colors.transparent , 
+      onBackground:colorList[selectedColor] , 
+      surface:colorList[selectedColor] , 
+      onSurface:colorList[selectedColor] ),
+    // 
+//        TODO: study themeData to configure theme
     appBarTheme: const AppBarTheme(
       centerTitle: false
     )
